@@ -1,14 +1,11 @@
-let bein = document.getElementById("ein");
-let baus = document.getElementById("aus");
+let beinaus = document.getElementById("einaus");
 let image = document.getElementById("im");
-baus.onclick = function()
+beinaus.onclick = function()
 {
-image.style.display="none";
-
-}
-
-bein.onclick = function()
-{
-image.style.display="block";
+    if (image.style.display === "none") {
+        image.style.display = "block";
+    } else {
+        image.style.display = "none";
+    }
 
 }
